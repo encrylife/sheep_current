@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pic_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="centerCrop" />
+
+         <RelativeLayout
+              android:layout_alignParentBottom="true"
+             android:background="#99374245"
+             android:layout_width="match_parent"
+             android:layout_height="15dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_time"
+                    />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="9dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="12-9"
+                    />
+
+                </LinearLayout>
+
+             <LinearLayout
+                 android:layout_alignParentRight="true"
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="4dp"
+                 >
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/icon_eye"
+                     />
+                 <TextView
+                     android:id="@+id/eye_count"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="2dp"
+                     android:textSize="9dp"
+                     android:gravity="center"
+                     android:textColor="#ffffff"
+                     android:text="129"
+                     />
+
+             </LinearLayout>
+
+             </RelativeLayout>
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="棉麻地中海风格纯色棉麻地中海风格纯色棉麻地中海风格纯色棉麻地中海风格纯色"
+        android:textColor="#999999"
+        android:textSize="12dp" />
+
+</LinearLayout>
